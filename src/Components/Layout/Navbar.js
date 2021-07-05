@@ -1,10 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import logo from '../../Assets/logo.svg';
+import React from "react";
+import styled from "styled-components";
+import logo from "../../Assets/logo.svg";
 
 const Nav = styled.nav`
   height: 100px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,6 +72,7 @@ const Signup = styled.button`
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  transition: 400ms ease all;
   :hover {
     opacity: 0.6;
   }
@@ -87,12 +87,14 @@ const Signup = styled.button`
   }
 `;
 
-const Navbar = (container) => {
+const Navbar = () => {
   return (
     <Nav>
       <NavL>
         <Logo>
-          <img src={logo} alt='logo' />
+          <a href='/'>
+            <img draggable={false} src={logo} alt='logo' />
+          </a>
         </Logo>
         <NavLinks>
           <a href='#!'>Features</a>
