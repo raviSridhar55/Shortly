@@ -18,7 +18,7 @@ box-sizing:border-box;
 `;
 
 export const Container = styled.div`
-  max-width: 1325px;
+  max-width: 1300px;
   margin: auto;
   padding: 0 10px;
 `;
