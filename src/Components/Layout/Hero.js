@@ -6,7 +6,6 @@ import {
   Section2,
   Title,
   Lead,
-  BgImg,
   Section1Content,
 } from '../style/HeroStyle';
 import { Btn1 } from '../style/MainStyle';

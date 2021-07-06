@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const HeroSection = styled.section`
   height: 90vh;
   display: flex;
+  /* background: orange; */
 `;
 
 export const Section1 = styled.section`
