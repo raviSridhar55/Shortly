@@ -7,7 +7,7 @@ margin:0;
 box-sizing:border-box;
   }
    body {
-    background-color: white;
+    background-color: #EFF1F7;
     font-family: 'poppins', sans-serif; 
     color : #9e9aa7;
     font-size: 18px;
