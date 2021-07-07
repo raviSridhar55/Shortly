@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Main = styled.div`
   height: auto;
@@ -132,12 +132,12 @@ export const Btn3 = styled.button`
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: #2acfcf;
+  background: ${(props) => (props.click ? "#3b3054" : "#2acfcf")};
   padding: 10px 15px;
   font-size: 18px;
   font-weight: 700;
 
   :hover {
-    background: #9be3e2;
+    opacity: 0.5;
   }
 `;
