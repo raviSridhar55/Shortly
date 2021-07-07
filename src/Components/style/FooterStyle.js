@@ -84,6 +84,8 @@ export const Social = styled.div`
 
   svg {
     fill: white;
+    transition: 300ms all ease-in;
+    cursor: pointer;
   }
   svg:hover {
     fill: #2acfcf;
