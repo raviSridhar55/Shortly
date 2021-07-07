@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const HeroSection = styled.section`
   height: 90vh;
   display: flex;
-  /* background: orange; */
+  background: white;
+  position: relative;
 `;
 
 export const Section1 = styled.section`
@@ -48,4 +49,37 @@ export const Lead = styled.p`
   color: #9e9aa7;
   margin-bottom: 20px;
   font-weight: 500;
+`;
+
+export const ShowCaseSection = styled.section`
+  display: grid;
+  place-items: center;
+  height: 250px;
+`;
+
+export const ShowcaseBox = styled.div`
+  width: 500px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  h1 {
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #232127;
+  }
+
+  h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  p {
+    font-weight: 500;
+  }
 `;

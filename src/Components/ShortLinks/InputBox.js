@@ -1,5 +1,6 @@
 import React from 'react';
 import { InputSection, InputField, Btn2, Form } from '../style/InputBoxStyle';
+import { Container } from '../style/MainStyle';
 import BgImg from '../../Assets/bg-shorten-desktop.svg';
 
 const onClick = (e) => {
@@ -12,17 +13,19 @@ const onSubmit = (e) => {
 
 const InputBox = () => {
   return (
-    <InputSection>
-      <img src={BgImg} alt='' />
-      <InputField>
-        <Form onSubmit={onSubmit}>
-          <input type='text' placeholder='Shorten a link here...' />
-          <Btn2 onClick={onClick} type='submit'>
-            Button
-          </Btn2>
-        </Form>
-      </InputField>
-    </InputSection>
+    <Container>
+      <InputSection>
+        <img src={BgImg} alt='' />
+        <InputField>
+          <Form onSubmit={onSubmit}>
+            <input type='text' placeholder='Shorten a link here...' />
+            <Btn2 onClick={onClick} type='submit'>
+              Shorten it!
+            </Btn2>
+          </Form>
+        </InputField>
+      </InputSection>
+    </Container>
   );
 };
 
