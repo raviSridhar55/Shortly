@@ -8,11 +8,9 @@ import BgImg from "../../Assets/bg-shorten-desktop.svg";
 const InputBox = () => {
   const [text, setText] = useState("");
   const [link, setLink] = useState("");
-
+  const [keyword, setKeyword] = useState("");
   const send = link?.result?.short_link;
-
   const onChange = (e) => setText(e.target.value);
-
   const onSubmit = async (e) => {
     e.preventDefault();
     console.log("result");
@@ -22,11 +20,11 @@ const InputBox = () => {
       );
       console.log(res.data);
       setLink(res.data);
+      setKeyword(text);
     } catch (err) {
       console.log(err.msg);
     }
   };
-
   return (
     <Container>
       <InputSection>
@@ -43,9 +41,8 @@ const InputBox = () => {
           </Form>
         </InputField>
       </InputSection>
-      <ResultSection link={send} text={text} />
+      <ResultSection link={send} text={text} keyword={keyword} />
     </Container>
   );
 };
-
 export default InputBox;
