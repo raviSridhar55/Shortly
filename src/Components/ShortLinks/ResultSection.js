@@ -25,6 +25,6 @@ const Results = ({ link, text, keyword }) => {
       </Result>
     );
   }
-  return <h1>Shorten your link above...</h1>;
+  return <> </>;
 };
 export default Results;

@@ -1,6 +1,6 @@
 import "./App.css";
 import { GlobalStyle } from "./Components/style/MainStyle";
-import Navbar from "./Components/Layout/Navbar";
+import Home from "./Components/Home/Home";
 import Hero from "./Components/Layout/Hero";
 import InputBox from "./Components/ShortLinks/InputBox";
 import Showcase from "./Components/Layout/Showcase";
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='App'>
       <GlobalStyle />
-      <Navbar />
+      <Home />
       <Hero />
       <InputBox />
       <Showcase />

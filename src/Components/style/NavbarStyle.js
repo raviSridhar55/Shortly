@@ -1,10 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Nav = styled.nav`
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 100px;
+  background-color: white;
+
+  @media screen and (max-width: 415px) {
+    padding: 0%;
+    justify-content: space-between;
+  }
 `;
 
 export const NavL = styled.div`
@@ -30,6 +37,10 @@ export const NavLinks = styled.div`
   a:hover {
     color: #232127;
   }
+
+  @media screen and (max-width: 415px) {
+    display: none;
+  }
 `;
 
 export const Logo = styled.div`
@@ -43,6 +54,10 @@ export const NavAuth = styled.div`
   width: 30%;
   display: grid;
   place-items: center;
+
+  @media screen and (max-width: 415px) {
+    display: none;
+  }
 `;
 
 export const AuthLinks = styled.div`
