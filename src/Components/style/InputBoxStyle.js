@@ -45,6 +45,7 @@ export const Btn2 = styled.button`
 
   :hover {
     background: #9be3e2;
+    cursor: pointer;
   }
 `;
 
@@ -139,5 +140,6 @@ export const Btn3 = styled.button`
 
   :hover {
     opacity: 0.5;
+    cursor: pointer;
   }
 `;

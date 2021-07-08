@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import { Result, Link, ShortLink, Btn3 } from '../style/InputBoxStyle';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-const Results = ({ link, text }) => {
+const Results = ({ link, text, keyword }) => {
   const [click, setClick] = useState(false);
-
   const onClick = (e) => {
     setClick(true);
     console.log(link);
     setTimeout(() => setClick(false), 2000);
   };
-
   if (link) {
     return (
       <Result>
         <Link>
-          <p>{text}</p>
+          <p>{keyword}</p>
           <ShortLink>
             <p>{link}</p>
             <CopyToClipboard text={link}>
@@ -29,5 +27,4 @@ const Results = ({ link, text }) => {
   }
   return <h1>Shorten your link above...</h1>;
 };
-
 export default Results;
