@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Result, Link, ShortLink, Btn3 } from "../style/InputBoxStyle";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import React, { useState } from 'react';
+import { Result, Link, ShortLink, Btn3 } from '../style/InputBoxStyle';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 const Results = ({ link, text }) => {
   const [click, setClick] = useState(false);
 
@@ -19,7 +19,7 @@ const Results = ({ link, text }) => {
             <p>{link}</p>
             <CopyToClipboard text={link}>
               <Btn3 click={click} onClick={onClick}>
-                {click ? "Copied!" : "Copy"}
+                {click ? 'Copied!' : 'Copy'}
               </Btn3>
             </CopyToClipboard>
           </ShortLink>
