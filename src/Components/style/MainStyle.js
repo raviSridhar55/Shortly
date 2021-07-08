@@ -11,7 +11,6 @@ box-sizing:border-box;
     font-family: 'poppins', sans-serif; 
     color : #9e9aa7;
     font-size: 18px;
-
     font-weight: 700;
     overflow-x: hidden;
    }
