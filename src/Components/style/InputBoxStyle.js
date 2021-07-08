@@ -21,6 +21,10 @@ export const InputSection = styled.section`
     top: 0;
     left: 0;
   }
+  @media screen and (max-width: 415px) {
+    height: 250px;
+    transform: translateY(0);
+  }
 `;
 
 export const InputField = styled.article`
@@ -30,6 +34,10 @@ export const InputField = styled.article`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 415px) {
+    height: 100%;
+  }
 `;
 
 export const Btn2 = styled.button`
@@ -46,6 +54,11 @@ export const Btn2 = styled.button`
   :hover {
     background: #9be3e2;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 415px) {
+    height: 70px;
+    width: 100%;
   }
 `;
 
@@ -66,6 +79,14 @@ export const Form = styled.form`
     :focus {
       outline: none;
       border: 5px #2acfcf solid;
+    }
+  }
+  @media screen and (max-width: 415px) {
+    flex-direction: column;
+
+    input {
+      height: 70px;
+      width: 100%;
     }
   }
 `;
@@ -112,6 +133,14 @@ export const Link = styled.div`
 
     padding-left: 15px;
   }
+  @media screen and (max-width: 415px) {
+    height: 150px;
+    flex-direction: column;
+
+    p {
+      margin-top: 5px;
+    }
+  }
 `;
 
 export const ShortLink = styled.div`
@@ -124,6 +153,12 @@ export const ShortLink = styled.div`
   p {
     color: #2acfcf;
     font-weight: 500;
+  }
+  @media screen and (max-width: 415px) {
+    width: 100%;
+    height: 75%;
+    flex-direction: column;
+    border-top: 5px #eee solid;
   }
 `;
 
@@ -141,5 +176,9 @@ export const Btn3 = styled.button`
   :hover {
     opacity: 0.5;
     cursor: pointer;
+  }
+  @media screen and (max-width: 415px) {
+    width: 90%;
+    height: 50px;
   }
 `;

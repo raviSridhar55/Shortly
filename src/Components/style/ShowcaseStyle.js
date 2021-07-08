@@ -1,10 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ShowcaseContainer = styled.section`
   /* ... */
   height: 400px;
   position: relative;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 415px) {
+    width: 100%;
+    height: 160vh;
+  }
 `;
 
 export const Card = styled.div`
@@ -45,6 +50,25 @@ export const Card = styled.div`
     font-weight: 500;
     font-size: 16px;
   }
+
+  @media screen and (max-width: 415px) {
+    width: 300px;
+    :nth-child(1) {
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+    :nth-child(3) {
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+    :nth-child(2) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -55,6 +79,10 @@ export const Content = styled.div`
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 415px) {
+    text-align: center;
+  }
 `;
 export const Line = styled.div`
   /* ... */
@@ -65,6 +93,13 @@ export const Line = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 415px) {
+    width: 120vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
 `;
 
 export const Badge = styled.div`
@@ -79,6 +114,10 @@ export const Badge = styled.div`
   img {
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (max-width: 415px) {
     left: 50%;
     transform: translate(-50%, -50%);
   }

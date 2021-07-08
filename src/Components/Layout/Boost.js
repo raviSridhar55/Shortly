@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import bgBoost from '../../Assets/bg-boost-desktop.svg';
-import { ShowcaseBox } from '../style/HeroStyle';
-import { Btn1 } from '../style/MainStyle';
+import React from "react";
+import styled from "styled-components";
+import bgBoost from "../../Assets/bg-boost-desktop.svg";
+import { ShowcaseBox } from "../style/HeroStyle";
+import { Btn1 } from "../style/MainStyle";
 
 const BoostSection = styled.section`
   height: 250px;
@@ -19,7 +19,7 @@ const Boost = () => {
       <ShowcaseBox>
         <h2>Boost your links today</h2>
         <Btn1>
-          <p>Get Started</p>{' '}
+          <p>Get Started</p>{" "}
         </Btn1>
       </ShowcaseBox>
     </BoostSection>
