@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Nav,
   NavL,
@@ -6,12 +6,12 @@ import {
   NavLinks,
   Logo,
   AuthLinks,
-} from "../style/NavbarStyle";
-import { FaBars } from "react-icons/fa";
-import { MobileIcon } from "../style/HamburgerStyle";
+} from '../style/NavbarStyle';
+import { FaBars } from 'react-icons/fa';
+import { MobileIcon } from '../style/HamburgerStyle';
 
-import { Btn1 } from "../style/MainStyle";
-import logo from "../../Assets/logo.svg";
+import { Btn1 } from '../style/MainStyle';
+import logo from '../../Assets/logo.svg';
 
 const Navbar = ({ mytoggleHandler }) => {
   return (
